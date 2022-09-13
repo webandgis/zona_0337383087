@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INE-WebMaps</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <link href="https://www.ine.gub.uy/INE-theme/images/favicon.ico" rel="Shortcut Icon">
+    <link rel="stylesheet" type="text/css" href="./mapa_control.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.1/dist/L.Control.Locate.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+
+
+
+<!-- marcadores de servicios -->
+<script src="./layer/geoservicios.geojson"></script>
+
+
+</head>
+<body>
+   
+    <div id="map" style="height: 100%; border: 0px solid rgb(255, 255, 255);">
+        <select name="select-lacation" id="select-location"> 
+            <option value="-1"> seleccione CODCOMP</option>
+            
+            
+        <option value = "-34.811,-55,758">0337383087 </option>        
+        
+        </select>
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="crossorigin=""></script> 
+
+        
+<!-- geojson de zonas-->
+        <script src="./layer/zonasCanelones.js"></script>
+        <script class="chab" src="./layer/chab.js"></script>
+
+
+       
+        <script src="./mapa_control.js"></script>
+        <script  src="control_capas.js"></script>
+        <script src="./ajax.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.1/dist/L.Control.Locate.min.js" charset="utf-8"></script>   
+
+    
+<script>L.control.locate().addTo(map);</script>
+
+
+</body>
+</html>

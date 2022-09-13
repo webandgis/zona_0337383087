@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+  }
+  head{
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+  .chab{
+    color: red;
+  }
+
+/*   .div{
+    display:flex;
+    width: 20%;
+    height: 100%;
+   
+    justify-content: flex-start;
+
+  } */
+
+/* 
+
+  .info { 
+    padding: 6px 8px; 
+    font: 14px/16px Arial, Helvetica, sans-serif; 
+    background: white; 
+    background: rgba(255,255,255,0.8); 
+    box-shadow: 0 0 15px rgba(0,0,0,0.2); 
+    border-radius: 5px; 
+}
+  .info h4 { 
+    margin: 0 0 5px; 
+    color: #777; 
+}
+ */
+/* #select-location {
+     display: flex;
+      color: rgb(0, 0, 0);
+      box-shadow: 5px 5px 5px #888;
+      height: 30px;
+      border-radius: 10px;
+      margin-left: 5px;
+      z-index: 5;
+      
+
+} */
+
+/* #map{
+  height: 120%; 
+  border: 2px solid rgb(63, 61, 61);
+} */
